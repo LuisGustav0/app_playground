@@ -38,6 +38,14 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, AppRouter.BUTTON_IMPLICIT_PAGE);
               },
             ),
+            PrimaryButton(
+              label: 'Animação Lista implicita',
+              backgroundColor: Colors.blue,
+              width: 800,
+              onPressed: () {
+                Navigator.pushNamed(context, AppRouter.LIST_IMPLICIT_PAGE);
+              },
+            ),
           ],
         ),
       ),
