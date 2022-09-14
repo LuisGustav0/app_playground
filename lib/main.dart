@@ -1,4 +1,5 @@
 import 'package:app_playground/core/ui/routes/app_routes.dart';
+import 'package:app_playground/modules/button_animation_implicit/button_animation_implicit_page.dart';
 import 'package:app_playground/modules/home/home_page.dart';
 import 'package:app_playground/modules/login_money/login_money_page.dart';
 import 'package:app_playground/modules/login_tinder/login_tinder.dart';
@@ -22,6 +23,8 @@ class MyApp extends StatelessWidget {
         AppRouter.HOME_PAGE: (context) => const HomePage(),
         AppRouter.LOGIN_MONEY_PAGE: (context) => const LoginMoneyPage(),
         AppRouter.LOGIN_TINDER_PAGE: (context) => const LoginTinderPage(),
+        AppRouter.BUTTON_IMPLICIT_PAGE: (context) =>
+            const ButtonAnimationImplicitPage(),
       },
     );
   }

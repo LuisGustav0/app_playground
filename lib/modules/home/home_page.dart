@@ -30,6 +30,14 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, AppRouter.LOGIN_TINDER_PAGE);
               },
             ),
+            PrimaryButton(
+              label: 'Animação Float Button implicita',
+              backgroundColor: Colors.orange,
+              width: 800,
+              onPressed: () {
+                Navigator.pushNamed(context, AppRouter.BUTTON_IMPLICIT_PAGE);
+              },
+            ),
           ],
         ),
       ),
