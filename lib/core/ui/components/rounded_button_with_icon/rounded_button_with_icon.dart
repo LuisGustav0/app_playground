@@ -8,6 +8,7 @@ class RoundedButtonWithIcon extends StatelessWidget {
   final double height;
   final Color color;
   final Widget? imageIcon;
+  final IconData? icon;
 
   const RoundedButtonWithIcon({
     super.key,
@@ -18,6 +19,7 @@ class RoundedButtonWithIcon extends StatelessWidget {
     required this.height,
     required this.color,
     this.imageIcon,
+    this.icon,
   });
 
   @override
@@ -39,7 +41,7 @@ class RoundedButtonWithIcon extends StatelessWidget {
                 left: 0,
                 right: 2,
               ),
-              child: imageIcon,
+              child: imageIcon ?? Icon(icon, color: Colors.white),
             ),
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 8.0),

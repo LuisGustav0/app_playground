@@ -18,14 +18,14 @@ class _LoginMoneyPageState extends State<LoginMoneyPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const HeaderWidget(),
-          const TitleWidget(
+          const Header(),
+          const HeaderTitle(
             label: 'Get your Money \n Under Control',
             fontSize: 40,
             colorLabel: Colors.white,
           ),
           const SizedBox(height: 15),
-          const TitleWidget(
+          const HeaderTitle(
             label: 'Manage your expenses. \nSeamlessy.',
             fontSize: 20,
             colorLabel: Colors.white54,

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class TitleWidget extends StatelessWidget {
+class HeaderTitle extends StatelessWidget {
   final String label;
   final Color colorLabel;
   final double fontSize;
 
-  const TitleWidget({
+  const HeaderTitle({
     super.key,
     required this.label,
     required this.colorLabel,

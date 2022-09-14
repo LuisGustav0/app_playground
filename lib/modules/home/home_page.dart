@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
         title: const Text('Home'),
       ),
       body: Center(
-        child: Row(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             PrimaryButton(
@@ -20,6 +20,14 @@ class HomePage extends StatelessWidget {
               width: 800,
               onPressed: () {
                 Navigator.pushNamed(context, AppRouter.LOGIN_MONEY_PAGE);
+              },
+            ),
+            PrimaryButton(
+              label: 'Login Tinder',
+              backgroundColor: Colors.pink,
+              width: 800,
+              onPressed: () {
+                Navigator.pushNamed(context, AppRouter.LOGIN_TINDER_PAGE);
               },
             ),
           ],

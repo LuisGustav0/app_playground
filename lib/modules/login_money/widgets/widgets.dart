@@ -1,2 +1,2 @@
-export 'header_widget.dart';
-export 'title_widget.dart';
+export 'header/header.dart';
+export 'header_title/header_title.dart';
